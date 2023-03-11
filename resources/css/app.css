@@ -1,0 +1,329 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face{
+    font-family: 'KG Second Chances Sketch';
+    src: url('../fonts/KGSecondChancesSketch.woff2') format('woff2'),
+        url('../fonts/KGSecondChancesSketch.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'KG Second Chances Sketch';
+}
+
+body {
+    @apply font-sans text-primary;
+}
+
+h1{
+    @apply text-4xl font-bold;
+}
+
+h2{
+    @apply text-3xl font-bold;
+}
+
+h3{
+    @apply text-2xl font-bold;
+}
+
+.link{
+    @apply text-primary font-semibold underline;
+}
+
+.container {
+    @apply mx-auto px-4;
+}
+
+.jumbo-title{
+    @apply text-6xl leading-tight;
+}
+
+.lead{
+    @apply text-2xl;
+}
+
+/* MAIN */
+.main{
+    min-height: calc(100vh - 380px);
+    background-color: #eaf3ff;
+}
+
+/* HEADER */
+.header {
+    @apply bg-white shadow-sm py-2 z-50 relative;
+}
+
+.header .nav ul li{
+    @apply relative inline-block border-b-2 border-transparent;
+}
+
+.header .nav ul li a{
+    @apply font-semibold;
+}
+
+.header .nav ul li:hover:before,
+.header .nav ul li a.active:before{
+    content: '';
+    @apply absolute left-0 w-full h-1 bg-yellow-500;
+    bottom: -45px;
+}
+
+/* COVER */
+.cover{
+    @apply bg-cover bg-center relative flex items-center justify-center;
+    height: 700px;
+    background-image: url('../img/gautam-arora-OVDtgUhUPBY-unsplash.jpg');
+}
+
+.cover:before{
+    content: '';
+    @apply absolute top-0 left-0 w-full h-full bg-primary opacity-50;
+}
+
+.cover .container{
+    @apply relative z-10;
+}
+
+.cover h1, .cover p{
+    @apply text-white;
+}
+
+.btn{
+    @apply py-4 px-6 inline-block;
+}
+
+.btn-primary{
+    @apply bg-yellow-300 text-white font-semibold text-primary;
+}
+
+.btn-primary:hover{
+    @apply bg-yellow-500;
+}
+
+.btn-secondary{
+    @apply bg-white text-primary font-semibold;
+}
+
+.btn-secondary:hover{
+    @apply bg-gray-200;
+}
+
+/* SERVICES */
+.services{
+    @apply py-12;
+}
+
+
+/* FOOTER */
+.footer{
+    @apply bg-white py-12 shadow-md;
+}
+
+.menu-content{
+    @apply hidden fixed top-0 left-0 w-full h-full bg-white z-50;
+}
+
+.menu-content.show{
+    @apply flex;
+}
+
+.feature-img-bg{
+    @apply bg-cover bg-center relative;
+    min-height: 500px;
+}
+
+.feature-img-bg:before{
+    content: '';
+    @apply absolute top-0 left-0 w-full h-full bg-primary opacity-25;
+}
+
+.feature-img-left .feature-img-bg .squares{
+    @apply absolute bottom-0 left-0 w-full h-60 w-auto;
+}
+
+.feature-img-right .feature-img-bg .squares{
+    @apply absolute bottom-0 right-0 w-full h-60 w-auto;
+}
+
+.quote{
+    @apply bg-primary bg-cover bg-center relative text-white py-20 bg-fixed;
+}
+
+.quote:before{
+    content: '';
+    @apply absolute top-0 left-0 w-full h-full bg-primary opacity-50;
+}
+
+.quote .container{
+    @apply relative z-10;
+}
+
+.page-cover{
+    @apply bg-cover bg-center relative flex items-center justify-center;
+    min-height: 500px;
+}
+
+.page-cover:before{
+    content: '';
+    @apply absolute top-0 left-0 w-full h-full bg-primary opacity-50;
+}
+
+.page-cover .container{
+    @apply relative z-10;
+}
+
+.page-features-img{
+    @apply bg-cover bg-center relative flex items-center justify-center;
+    min-height: 500px;
+}
+
+.list-sm{
+    @apply m-0 p-0 text-sm;
+}
+
+.list-sm li{
+    padding-left: 1.5rem;
+    @apply list-none flex items-center relative;
+}
+
+.list-sm li i{
+    @apply mr-2 text-yellow-500 absolute left-0 top-1;
+}
+
+.list-lg{
+    @apply m-0 p-0 text-lg;
+}
+
+.list-lg li{
+    padding-left: 1.5rem;
+    @apply list-none flex items-center relative;
+}
+
+.list-lg li i{
+    @apply mr-2 text-yellow-500 absolute left-0 top-1;
+}
+
+/* Tablet */
+@media screen and (max-width: 1024px) {
+
+    .cover{
+        height: 500px;
+    }
+
+    .jumbo-title{
+        @apply text-5xl leading-tight;
+    }
+
+    .lead{
+        @apply text-xl;
+    }
+
+    h1{
+        @apply text-3xl;
+    }
+
+    h2{
+        @apply text-2xl;
+    }
+
+    h3{
+        @apply text-xl;
+    }
+
+    .header .nav ul li{
+        @apply inline-block;
+    }
+
+    .page-features-img{
+        min-height: 400px;
+    }
+}
+
+/* Mobile */
+@media screen and (max-width: 768px) {
+
+    .header .nav{
+        @apply hidden;
+    }
+
+    .header .menu-btn{
+        @apply block;
+    }
+
+    .header .menu-btn i{
+        @apply text-2xl;
+    }
+
+    .header .menu-btn:hover{
+        @apply text-yellow-500;
+    }
+
+    .header .menu-content{
+        @apply hidden;
+    }
+
+    .header .menu-content.show{
+        @apply flex flex-col justify-center items-center;
+    }
+
+    .header .menu-content ul li{
+        @apply text-2xl text-center mb-4;
+    }
+
+    .header .menu-content ul li a{
+        @apply text-gray-700;
+    }
+
+    .header .menu-content ul li a:hover{
+        @apply text-yellow-500;
+    }
+
+    .cover{
+        height: 500px;
+    }
+
+    .jumbo-title{
+        @apply text-4xl leading-tight;
+    }
+
+    .lead{
+        @apply text-lg;
+    }
+
+    h1{
+        @apply text-2xl;
+    }
+
+    h2{
+        @apply text-xl;
+    }
+
+    h3{
+        @apply text-lg;
+    }
+
+    .lead{
+        @apply text-lg;
+    }
+
+    .btn{
+        @apply py-3 px-4;
+    }
+
+    .btn-primary{
+        @apply text-sm;
+    }
+
+    .btn-secondary{
+        @apply text-sm;
+    }
+
+    .page-features-img{
+        min-height: 300px;
+    }
+}
