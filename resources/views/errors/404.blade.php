@@ -1,7 +1,7 @@
 <x-guest-layout title="Error 404">
     <section class="py-10 md:py-20">
         <div class="container">
-            <div class="w-1/3 mx-auto text-center">
+            <div class="w-full md:w-2/3 lg:w-1/3 mx-auto text-center">
                 <h1 class="mb-4">
                     Error 404
                 </h1>
