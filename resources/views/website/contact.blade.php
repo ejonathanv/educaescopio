@@ -9,15 +9,15 @@
 
                 <h4 class="mb-2">Correo electrónico</h4>
                 <p class="mb-7 font-bold">
-                    <a href="mailto:info@educaescopio.com">
-                        info@educaescopio.com
+                    <a href="mailto:{{ env('APP_EMAIL') }}">
+                        {{ env('APP_EMAIL') }}
                     </a>
                 </p>
 
                 <h4 class="mb-2">Teléfono</h4>
                 <p class="mb-7 font-bold">
-                    <a href="tel:+52 664 634 00 00">
-                        +52 664 634 00 00
+                    <a href="tel:{{ env('APP_PHONE') }}">
+                        {{ env('APP_PHONE') }}
                     </a>
                 </p>
 
@@ -77,7 +77,7 @@
                     <div class="form-group">
                         <label class="flex items-center space-x-2">
                             <input type="checkbox" name="terms" id="terms" required>
-                            <span>He leido las <a href="#" class="underline">políticas de privacidad</a></span>
+                            <span>He leido las <a href="{{ route('privacyPolicy') }}" class="underline">políticas de privacidad</a></span>
                         </label>
                         <div>
                             @error('terms')

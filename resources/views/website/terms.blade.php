@@ -1,6 +1,6 @@
 <x-guest-layout title="Políticas de privacidad">
-    <div class="container py-16">
-        <div class="w-9/12 mx-auto">
+    <div class="container py-10 md:py-16">
+        <div class="w-full md:w-9/12 mx-auto">
             <h2 class="mb-4">Política de privacidad</h2>
             <p class="mb-4">El presente Política de Privacidad establece los términos en que Educaescopio | Mi Pequeño Travieso usa y protege la información que es proporcionada por sus usuarios al momento de utilizar su sitio web. Esta compañía está comprometida con la seguridad de los datos de sus usuarios. Cuando le pedimos llenar los campos de información personal con la cual usted pueda ser identificado, lo hacemos asegurando que sólo se empleará de acuerdo con los términos de este documento. Sin embargo esta Política de Privacidad puede cambiar con el tiempo o ser actualizada por lo que le recomendamos y enfatizamos revisar continuamente esta página para asegurarse que está de acuerdo con dichos cambios.</p>
             <h2 class="mb-4">Información que es recogida</h2>
