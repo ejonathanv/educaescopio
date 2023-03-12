@@ -378,4 +378,9 @@ h3{
     .page-features-img{
         min-height: 300px;
     }
+
+    .quote{
+        @apply bg-primary bg-cover bg-center relative text-white py-20;
+        background-attachment: scroll !important;
+    }
 }
