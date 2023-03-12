@@ -28,6 +28,9 @@
                     <li>
                         <a href="{{ route('preschool') }}">Preescolar</a>
                     </li>
+                    <li>
+                        <a href="{{ route('privacyPolicy') }}">Políticas de privacidad</a>
+                    </li>
                 </ul>
             </nav>
         </div>
@@ -38,3 +41,9 @@
         </p>
     </div>
 </footer>
+
+<a href="https://api.whatsapp.com/send?phone=+52{{ env('APP_WHATSAPP') }}&text=Hola,%20me%20gustaría%20saber%20más%20sobre%20sus%20servicios."  
+    target="_blank"
+    class="whatsapp_icon">
+    <img src="{{ asset('img/whatsapp_icon.svg') }}" alt="">
+</a>

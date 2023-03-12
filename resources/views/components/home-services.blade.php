@@ -8,9 +8,10 @@
                 </p>
             </div>
         </div>
-        <div class="flex flex-col md:flex-row items-stretch justify-between mt-10 space-y-7 md:space-y-0 md:space-x-4 lg:space-x-6">
+        <div class="flex flex-col md:flex-row items-stretch justify-between mt-10 space-y-7 md:space-y-0 md:space-x-4 lg:space-x-6 text-center md:text-left">
             <div class="w-full md:w-1/4 flex-1">
                 <div class="bg-blue-200 p-6 lg:p-10 h-full">
+                    <i class="fa fa-leaf text-6xl text-blue-300 mb-6"></i>
                     <h3 class="mb-6">Juego</h3>
                     <p>
                     Forjamos vínculos al compartir, negociar y resolver conflictos con aptitudes de liderazgo. 
@@ -20,6 +21,7 @@
 
             <div class="w-full md:w-1/4 flex-1">
                 <div class="bg-indigo-200 p-6 lg:p-10 h-full">
+                    <i class="fa fa-child text-6xl text-indigo-300 mb-6"></i>
                     <h3 class="mb-6">Crezco</h3>
                     <p>
                     Respetamos la naturaleza de los niños y niñas asistiendo el descubrimiento por sí mismos. 
@@ -29,6 +31,7 @@
 
             <div class="w-full md:w-1/4 flex-1">
                 <div class="bg-green-200 p-6 lg:p-10 h-full">
+                    <i class="fa fa-heart text-6xl text-green-300 mb-6"></i>
                     <h3 class="mb-6">Aprendo</h3>
                     <p>
                     Su participación activa los integra en la dinámica del espacio y el entorno, crea experiencias significativas. 

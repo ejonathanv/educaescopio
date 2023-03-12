@@ -9,12 +9,12 @@
         </p>
 
         <div class="flex flex-col md:flex-row items-center w-full md:w-2/3 lg:w-1/2 mx-auto space-y-5 md:space-y-0 space-x-0 md:space-x-5">
-            <a href="{{ route('programs') }}" class="btn btn-primary flex-1 w-full">
-                Nuestros programas
+            <a href="{{ route('nursery') }}" class="btn btn-primary flex-1 w-full">
+                Guardería
             </a>
 
-            <a href="{{ route('enrollments') }}" class="btn btn-secondary flex-1 w-full">
-                Inscripciones
+            <a href="{{ route('preschool') }}" class="btn btn-secondary flex-1 w-full">
+                Preescolar
             </a>
         </div>
     </div>

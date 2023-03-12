@@ -6,7 +6,7 @@
                 {{ $slot }}
             </div>
             <div class="w-full md:w-5/12">
-                <div class="page-features-img" style="background-image: url({{ asset($img) }})"></div>
+                <div class="page-features-img shadow-md" style="background-image: url({{ asset($img) }})"></div>
             </div>
         </div>
     </div>

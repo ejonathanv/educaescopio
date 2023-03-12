@@ -20,6 +20,7 @@ Route::get('/sobre-nosotros', [WebsiteController::class, 'about'])->name('about'
 Route::get('/guarderia', [WebsiteController::class, 'nursery'])->name('nursery');
 Route::get('/preescolar', [WebsiteController::class, 'preschool'])->name('preschool');
 Route::get('/contacto', [WebsiteController::class, 'contact'])->name('contact');
+Route::post('/contacto', [WebsiteController::class, 'submitForm'])->name('submitForm');
 Route::get('/area-para-padres', [WebsiteController::class, 'parentsArea'])->name('parentsArea');
 Route::get('programas', [WebsiteController::class, 'programs'])->name('programs');
 Route::get('inscripciones', [WebsiteController::class, 'enrollments'])->name('enrollments');

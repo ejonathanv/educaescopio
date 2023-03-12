@@ -34,7 +34,7 @@
         <nav class="nav w-1/3 hidden lg:block">
             <ul class="flex items-center space-x-4 w-full items-center justify-end">
                 <li>
-                    <a href="{{ route('parentsArea') }}" class="@if (Route::currentRouteName() == 'parentsArea') active @endif">
+                    <a href="{{ route('login') }}" class="@if (Route::currentRouteName() == 'login') active @endif">
                         Área para padres
                     </a>
                 </li>
@@ -43,11 +43,13 @@
                         Contacto
                     </a>
                 </li>
-                <li class="flex items-center space-x-3">
-                    <a href="#">
+                <li>
+                    <a href="https://www.instagram.com/educaescopio_/" target="_blank">
                         <i class="fab fa-instagram"></i>
                     </a>
-                    <a href="#">
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/educaescopio/" target="_blank">
                         <i class="fab fa-facebook-f"></i>
                     </a>
                 </li>
@@ -74,17 +76,14 @@
                         <li><a href="{{ route('about') }}">Quienes somos</a></li>
                         <li><a href="{{ route('nursery') }}">Guardería</a></li>
                         <li><a href="{{ route('preschool') }}">Preescolar</a></li>
-                        <li><a href="{{ route('parentsArea') }}">Área para padres</a></li>
+                        <li><a href="{{ route('login') }}">Área para padres</a></li>
                         <li><a href="{{ route('contact') }}">Contacto</a></li>
                         <li class="flex items-center space-x-6">
-                            <a href="#">
+                            <a href="https://www.instagram.com/educaescopio_/" target="_blank">
                                 <i class="fab fa-instagram"></i>
                             </a>
-                            <a href="#">
+                            <a href="https://www.facebook.com/educaescopio/" target="_blank">
                                 <i class="fab fa-facebook-f"></i>
-                            </a>
-                            <a href="#">
-                                <i class="fab fa-youtube"></i>
                             </a>
                     </ul>
                 </nav>

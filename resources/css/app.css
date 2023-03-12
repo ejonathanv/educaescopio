@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -17,6 +19,7 @@ h1, h2, h3, h4, h5, h6 {
 
 body {
     @apply font-sans text-primary;
+    font-family: 'Nunito', sans-serif !important;
 }
 
 h1{
@@ -206,6 +209,55 @@ h3{
 
 .list-lg li i{
     @apply mr-2 text-yellow-500 absolute left-0 top-1;
+}
+
+.form-group{
+    @apply mb-4;
+}
+
+.form-group label{
+    @apply block mb-2;
+}
+
+.form-group input:not([type="checkbox"]):not([type="radio"]){
+    @apply w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-primary;
+}
+
+.form-group textarea{
+    @apply w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-primary;
+}
+
+.form-group input:focus{
+    @apply border-primary;
+}
+
+.form-group textarea:focus{
+    @apply border-primary;
+}
+
+.form-group input::placeholder{
+    @apply text-gray-500;
+}
+
+.form-group textarea::placeholder{
+    @apply text-gray-500;
+}
+
+.form-group input:disabled{
+    @apply bg-gray-200 cursor-not-allowed;
+}
+
+.form-group textarea:disabled{
+    @apply bg-gray-200 cursor-not-allowed;
+}
+
+
+.whatsapp_icon{
+    @apply fixed bottom-0 right-0 m-4 z-50 block;
+}
+
+.whatsapp_icon img{
+    @apply w-16 h-auto;
 }
 
 /* Tablet */
